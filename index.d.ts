@@ -33,9 +33,9 @@ declare module "react-native-progress-steps" {
 
   export interface ProgressStepProps {
     label?: string;
-    onNext?: () => void;
-    onPrevious?: () => void;
-    onSubmit?: () => void;
+    onNext?: (activeStep?: number) => void;
+    onPrevious?: (activeStep?: number) => void;
+    onSubmit?: (activeStep?: number) => void;
     setActiveStep?: (step?: number) => void;
     nextBtnText?: string;
     previousBtnText?: string;
